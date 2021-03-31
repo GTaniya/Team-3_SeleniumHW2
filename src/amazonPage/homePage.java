@@ -16,7 +16,7 @@ public class homePage {
 
     @BeforeMethod
     public void setUp() {
-        String chromeDriverPath = "BrowserDriver/windows/chromedriver.exe";
+        String chromeDriverPath = "BrowserDriver/mac/chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", chromeDriverPath);
         driver = new ChromeDriver();
         driver.manage().window().maximize();

@@ -9,7 +9,7 @@ public class amazonTestPage extends homePage {
     homePage home;
 
     @Test(priority = 1)
-    public void testCheckSearchBox() {
+    public void testNRButton() {
         checkSearchBox();
         String expectedText = "\"Gloves\"";
         String actualText = driver.findElement(By.xpath("//*[@id=\"search\"]/span/div/span/h1/div/div[1]/div/div/span[3]")).getText();
