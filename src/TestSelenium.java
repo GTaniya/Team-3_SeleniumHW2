@@ -34,7 +34,7 @@ public class TestSelenium {
             Assert.assertEquals(actualTitle, expectedTitle, "Title not found");
 
 
-            Thread.sleep(4000);
+            Thread.sleep(6000);
 
             driver.close();
             driver.quit(); // close executable program
