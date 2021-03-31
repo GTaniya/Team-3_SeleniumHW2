@@ -41,6 +41,19 @@ public class amazonPrimeTestPage extends PrimePage {
 
     }
 
+    @Test(priority = 2)
+    public void testTryDiliveryButton() throws InterruptedException {
+
+        String expectedText = "Prime Delivery";
+        driver.findElement(By.cssSelector("div[id='nav-main'] div[class='nav-fill'] span:nth-child(1)")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.cssSelector("[title='Delivery']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.cssSelector("[cel_widget_id='acsux-widgets_content-grid_merchandised-search-3_row3-col4'] [alt='Learn more']")).click();
+        Thread.sleep(2000);
+
+    }
+
     @Test(priority = 3)
 
     public void testPrimeVideo() throws InterruptedException {
