@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class amazonPage {
+public class amazonWebElement {
 
 
     public static final String amazonUrl = "https://www.amazon.com/";
