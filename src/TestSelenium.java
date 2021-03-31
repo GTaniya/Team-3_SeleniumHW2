@@ -23,7 +23,6 @@ public class TestSelenium {
             driver.manage().window().maximize();
 
             WebElement searchBox =driver.findElement(By.id("twotabsearchtextbox"));
-            searchBox.sendKeys("sneakers");
 
             WebElement searchButton =driver.findElement(By.id("nav-search-submit-button"));
             searchButton.click();
