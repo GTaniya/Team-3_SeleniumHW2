@@ -35,13 +35,13 @@ public class PrimePage {
 //    }
 
     public void checkTryPrimeButton() {
-        // Enter product name
+
         driver.findElement(By.xpath("//input[@id='signInSubmit']"));
 
     }
 
     public void checkPrimeVideo() {
-        // Enter product name
+
         driver.findElement(By.xpath("//input[@id='signInSubmit']"));
 
     }
