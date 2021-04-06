@@ -104,9 +104,32 @@ public class amazonPrimeTestPage extends PrimePage {
 
     }
 
-
-
     @Test(priority = 8)
+    public void testCareers() throws InterruptedException {
+
+        String expectedText = "Operations Opportunities for Students | Amazon.jobs";
+        driver.findElement(By.cssSelector("div[id='nav-main'] div[class='nav-fill'] span:nth-child(1)")).click();
+        WebDriverWait wait = new WebDriverWait(driver, 40);
+        driver.findElement(By.xpath("//a[.='Careers']")).click();
+        WebDriverWait wait1 = new WebDriverWait(driver, 40);
+        driver.findElement(By.xpath("//a[.='View open jobs']"));
+
+    }
+
+    @Test(priority = 9)
+    public void testAmazonDevices() throws InterruptedException {
+
+        String expectedText = "Amazon.com: All-new Echo (4th Gen) | With premium sound, smart home hub, and Alexa | Twilight Blue: Amazon Devices";
+        driver.findElement(By.cssSelector("div[id='nav-main'] div[class='nav-fill'] span:nth-child(1)")).click();
+        WebDriverWait wait = new WebDriverWait(driver, 40);
+        driver.findElement(By.xpath("//a[.='Amazon Devices']")).click();
+        WebDriverWait wait1 = new WebDriverWait(driver, 40);
+        driver.findElement(By.xpath("//a[.='Echo & Alexa Devices']"));
+
+    }
+
+
+    @Test(priority = 10)
     public void testPrimeVideo() throws InterruptedException {
         String expectedText = "Amazon.com: Prime Video: Prime Video";
         driver.findElement(By.cssSelector("#nav-hamburger-menu > span")).click();
